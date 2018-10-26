@@ -104,7 +104,7 @@ void * draw_output(void *arg)
 		cli_p->add_flist(flist_str);
 		sem_post(&(cli_p->lock));
 		sem_wait(&(cli_p->lock));
-		if  (_c == "Q")
+		if  (_c == "Queen")
 		{
 			std::vector<std::string>::iterator pos;
 			for (pos = cli_p->flist.begin(); pos != cli_p->flist.end();)
